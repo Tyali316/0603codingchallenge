@@ -1,4 +1,5 @@
 // Create a function that takes two dates and returns the number of days between the first and second date.
+
 // psuedo- code:
 //create a function
 //that takes two dates
@@ -19,7 +20,7 @@
   let date2 = new Date("06/20/2019");
   
 const dates = function date(date1, date2){
-    let difference = date2.getTime() - date1.getTime();
+    let difference = date2.getTime() - date1.getTime(); // the difference will come out in milliseconds
     //used the math.ceil method to convert the milliseconds into days...difference by the 1000 milliseconds * (60seconds * 60mins) * 24hrs
     let totalDates = Math.ceil(difference / (1000 * 3600 * 24));
     return totalDates;
